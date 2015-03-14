@@ -53,3 +53,5 @@ function main {
 	$hipChatLastID = ($messages.items | Sort-Object date -Descending | Select-Object -First 1).id
 	$hipChatLastID | Out-File "$PSScriptRoot\HipChatLastID.txt"
 }
+
+main
